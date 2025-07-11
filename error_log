@@ -1,0 +1,15 @@
+[28-Jun-2025 07:08:06 UTC] PHP Warning:  require_once(/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php): Failed to open stream: No such file or directory in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
+[28-Jun-2025 07:08:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/brosistechnology/examfighter.brosistechnology.in/artisan:20
+Stack trace:
+#0 {main}
+  thrown in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
+[28-Jun-2025 07:08:20 UTC] PHP Warning:  require_once(/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php): Failed to open stream: No such file or directory in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
+[28-Jun-2025 07:08:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/brosistechnology/examfighter.brosistechnology.in/artisan:20
+Stack trace:
+#0 {main}
+  thrown in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
+[28-Jun-2025 07:08:32 UTC] PHP Warning:  require_once(/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php): Failed to open stream: No such file or directory in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
+[28-Jun-2025 07:08:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/brosistechnology/examfighter.brosistechnology.in/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/brosistechnology/examfighter.brosistechnology.in/artisan:20
+Stack trace:
+#0 {main}
+  thrown in /home/brosistechnology/examfighter.brosistechnology.in/artisan on line 20
