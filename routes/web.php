@@ -1,10 +1,22 @@
 <?php
 
 
+use App\Http\Controllers\AdminMain\CouresController;
+use App\Http\Controllers\AdminMain\ExamController;
+use App\Http\Controllers\AdminMain\Group;
+use App\Http\Controllers\AdminMain\PackageController;
+use App\Http\Controllers\AdminMain\PassageController;
+use App\Http\Controllers\AdminMain\QuestionController;
+use App\Http\Controllers\AdminMain\StudyMaterialsController;
+use App\Http\Controllers\AdminMain\SubjectController;
+use App\Http\Controllers\AdminMain\SubtopicController;
+use App\Http\Controllers\AdminMain\TopicController;
+use App\Http\Controllers\AdminMain\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
 use App\Http\Controllers\W3crmAdminController;
+use App\Http\Controllers\AdminMain\TransactionReport;
 // Super Admin 
 
 
@@ -46,6 +58,45 @@ Route::middleware('auth')->group(function () {
     
     // Admin Route
     Route::group(['prefix' => 'admin'], function () {
+
+        Route::resource('transaction_reports', TransactionReport::class);
+
+        // group controller//
+        Route::resource('groups', Group::class);
+        
+        //courses controller//
+        Route::resource('courses', CouresController::class);
+
+        // users controller//
+        Route::resource('users', UserController::class);
+
+        // packages controller//
+        Route::resource('packages', PackageController::class);
+
+        // subject controller//
+        Route::resource('subjects', SubjectController::class);
+
+        //passage controller//
+        Route::resource('passages', PassageController::class);
+
+        //topic controller//
+        Route::resource('topices', TopicController::class);
+
+        // sub-topic controller//
+        Route::resource('subtopices', SubtopicController::class);
+
+        //question controller//
+        Route::resource('questions', QuestionController::class);
+
+        //exam controller//
+        Route::resource('exams',ExamController::class);
+
+        // studymaterials//
+        Route::resource('studymaterials',StudyMaterialsController::class);
+       
+
+
+
     
         
     });

@@ -13,7 +13,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/transaction_reports')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -25,7 +25,7 @@
             </li>
 
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/groups')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9732 2.52102H7.0266C4.25735 2.52102 2.52118 4.48177 2.52118 7.25651V14.7438C2.52118 17.5186 4.2491 19.4793 7.0266 19.4793H14.9723C17.7507 19.4793 19.4795 17.5186 19.4795 14.7438V7.25651C19.4795 4.48177 17.7507 2.52102 14.9732 2.52102Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -36,7 +36,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/courses')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9732 2.52102H7.0266C4.25735 2.52102 2.52118 4.48177 2.52118 7.25651V14.7438C2.52118 17.5186 4.2491 19.4793 7.0266 19.4793H14.9723C17.7507 19.4793 19.4795 17.5186 19.4795 14.7438V7.25651C19.4795 4.48177 17.7507 2.52102 14.9732 2.52102Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -47,7 +47,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/users')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9732 2.52102H7.0266C4.25735 2.52102 2.52118 4.48177 2.52118 7.25651V14.7438C2.52118 17.5186 4.2491 19.4793 7.0266 19.4793H14.9723C17.7507 19.4793 19.4795 17.5186 19.4795 14.7438V7.25651C19.4795 4.48177 17.7507 2.52102 14.9732 2.52102Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -68,7 +68,7 @@
 
 
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/packages')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9732 2.52102H7.0266C4.25735 2.52102 2.52118 4.48177 2.52118 7.25651V14.7438C2.52118 17.5186 4.2491 19.4793 7.0266 19.4793H14.9723C17.7507 19.4793 19.4795 17.5186 19.4795 14.7438V7.25651C19.4795 4.48177 17.7507 2.52102 14.9732 2.52102Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -78,7 +78,7 @@
                     <span class="nav-text">Packages</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/subjects')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -90,7 +90,7 @@
                     <span class="nav-text">Subjects</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/passages')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -103,7 +103,7 @@
                 </a>
             </li>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/topices')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -117,7 +117,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/subtopices')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -131,7 +131,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/questions')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -144,7 +144,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/exams')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -157,7 +157,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/studymaterials')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />

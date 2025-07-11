@@ -1,0 +1,119 @@
+
+@extends('admin-main.layouts.default')
+
+@section('content')
+<div class="container-fluid">
+    <h3>Users</h3>
+
+    <!-- Top action buttons -->
+    <div class="mb-3">
+        <a href="{{url('admin/users/create')}}" class="btn btn-success btn-sm">+ Add New User</a>
+        <a href="" class="btn btn-warning btn-sm">Edit</a>
+        <a href=""
+           onclick="event.preventDefault(); document.getElementById('delete-form').submit();"
+           class="btn btn-danger btn-sm">
+           Delete
+        </a>
+        <a href="" class="btn btn-success btn-sm">+ Assign Form Rights</a>
+
+    
+        <form id="delete-form" action="" method="POST" style="display: none;">
+            @csrf
+            @method('DELETE')
+        </form>
+    </div>
+    
+
+    <!-- Top search -->
+    <div class="mb-2 d-flex">
+        <input type="text" class="form-control w-25" placeholder="Search">
+        <button class="btn btn-success ms-2"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Group table -->
+    <div class="card">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>#</th>
+                            <th>Leval</th>
+                            <th>User Name</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Group</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>Administrator	</td>
+                            <td>admin</td>
+                            <td>Administrator	</td>
+                            <td>root@localhost.com	</td>
+                            <td>0000000002</td>
+                            <td>NURSING EXAM | MAD GURU'S | B. Sc. Nursing 4th Year Students	</td>
+                            <td>  <aspan class="badge badge-success light border-0">status</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary btn-sm dropdown-toggle"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="{{ url('admin/users/{id}/edit') }}" onclick="check_perform_sedit()">
+                                            <i class="fa fa-edit"></i> Edit
+                                        </a>
+                                       
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        
+                       
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom search -->
+    <div class="mt-3 d-flex">
+        <input type="text" class="form-control w-25" placeholder="Search">
+        <button class="btn btn-success ms-2"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+@endsection
+@push('scripts')
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper.js (required for Bootstrap 4 dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    {{-- <script>
+        function check_perform_sedit() {
+            alert('Edit clicked');
+        }
+
+        function check_perform_sdelete(id) {
+            alert('Delete clicked with ID: ' + id);
+        }
+    </script> --}}
+@endpush
+
