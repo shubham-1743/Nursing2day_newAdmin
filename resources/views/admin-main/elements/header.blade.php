@@ -2,7 +2,7 @@
     <div class="chatbox-close"></div>
     <div class="custom-tab-1">
         <ul class="nav nav-tabs">
-            {{-- <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#notes">Notes</a>
             </li>
             <li class="nav-item">
@@ -10,7 +10,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
-            </li> --}}
+            </li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade active show" id="chat">
