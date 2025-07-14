@@ -3,14 +3,13 @@
 
 @section('content')
 <div class="container-fluid">
-    <h3>Study Material</h3>
+    <h3>Questions</h3>
 
     <!-- Top action buttons -->
     <div class="mb-3">
-        <a href="{{url('admin/studymaterials/create')}}" class="btn btn-success btn-sm">+ Add New Study-Material</a>
-        
-        <a href=""
-           onclick="event.preventDefault(); document.getElementById('delete-form').submit();"
+        <a href="{{url('admin/lives/create')}}" class="btn btn-success btn-sm">+Add New Live url</a>
+        <a href="javascript:void(0);" onclick="check_perform_sdelete('15')" class="btn btn-warning btn-sm">Edit</a>
+        <a  href="javascript:void(0);" onclick="check_perform_sdelete('15')"
            class="btn btn-danger btn-sm">
            Delete
         </a>
@@ -39,12 +38,7 @@
                         <tr>
                             <th><input type="checkbox"></th>
                             <th>#</th>
-                            <th>Photo</th>
-                            <th>PDF</th>
                             <th>Title</th>
-                            <th>Subject</th>
-                            <th>Topic</th>
-                            <th>Stopic</th>
                             <th>Link</th>
                             <th>Action</th>
                         </tr>
@@ -53,13 +47,10 @@
                         <tr>
                             <td><input type="checkbox"></td>
                             <td>1</td>
-                            <td><img src="" alt="">	</td>
-                            <td>pdf</td>
-                            <td>Hindi</td>
-                            <td>Hindi</td>
-                            <td>Medical Surgical Nursing	</td>
-                            <td>NURSING EXAM </td>
-                            <td>###</td>
+                            <td>World Haemophilia Day is observed on 17 April</td>
+                            <td>####	</td>
+                
+                            
                            
                             <td>
                                 <div class="dropdown">
@@ -72,10 +63,10 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item text-success" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
+                                        {{-- <a class="dropdown-item text-success" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
                                             <i class="fa fa-arrows-alt"></i> view
-                                        </a>
-                                        <a class="dropdown-item" href="{{ url('admin/studymaterials/{id}/edit') }}" onclick="check_perform_sedit()">
+                                        </a> --}}
+                                        <a class="dropdown-item" href="{{ url('admin/lives/{id}/edit') }}" onclick="check_perform_sedit()">
                                             <i class="fa fa-edit"></i> Edit
                                         </a>
                                         <a class="dropdown-item text-danger" href="javascript:void(0);" onclick="check_perform_sdelete('15')">

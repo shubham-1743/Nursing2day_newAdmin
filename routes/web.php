@@ -1,17 +1,26 @@
 <?php
 
 
+use App\Http\Controllers\AdminMain\CouponController;
 use App\Http\Controllers\AdminMain\CouresController;
+use App\Http\Controllers\AdminMain\Current_affair;
+use App\Http\Controllers\AdminMain\CustomNotificationController;
 use App\Http\Controllers\AdminMain\ExamController;
 use App\Http\Controllers\AdminMain\Group;
+use App\Http\Controllers\AdminMain\LiveUrlController;
+use App\Http\Controllers\AdminMain\MailController;
 use App\Http\Controllers\AdminMain\PackageController;
 use App\Http\Controllers\AdminMain\PassageController;
 use App\Http\Controllers\AdminMain\QuestionController;
+use App\Http\Controllers\AdminMain\ResultController;
+use App\Http\Controllers\AdminMain\SalereportController;
+use App\Http\Controllers\AdminMain\StudentController;
 use App\Http\Controllers\AdminMain\StudyMaterialsController;
 use App\Http\Controllers\AdminMain\SubjectController;
 use App\Http\Controllers\AdminMain\SubtopicController;
 use App\Http\Controllers\AdminMain\TopicController;
 use App\Http\Controllers\AdminMain\UserController;
+use App\Http\Controllers\AdminMain\VideoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
@@ -93,6 +102,34 @@ Route::middleware('auth')->group(function () {
 
         // studymaterials//
         Route::resource('studymaterials',StudyMaterialsController::class);
+
+        //current_affair//
+       Route::resource('current_affairs', Current_affair::class);
+
+       //CustomNotifications//
+       Route::resource('CustomNotifications', CustomNotificationController::class);
+
+       //Results//
+       Route::resource('results', ResultController::class);
+
+       //liveurl//
+       Route::resource('lives', LiveUrlController::class);
+
+       //student//
+       Route::resource('students', StudentController::class);
+
+       //Coupons//
+       Route::resource('Coupons',CouponController::class);
+
+       //video//
+       Route::resource('videos', VideoController::class);
+
+       //salereport//
+       Route::resource('sale_reports', SalereportController::class);
+
+       // mails//
+       Route::resource('mails',MailController::class);
+
        
 
 

@@ -3,24 +3,23 @@
 
 @section('content')
 <div class="container-fluid">
-    <h3>Study Material</h3>
+    <h3>Coupons</h3>
 
     <!-- Top action buttons -->
     <div class="mb-3">
-        <a href="{{url('admin/studymaterials/create')}}" class="btn btn-success btn-sm">+ Add New Study-Material</a>
-        
+        <a href="{{url('admin/Coupons/create')}}" class="btn btn-success btn-sm">+ Add New Coupon</a>
+        <a href="javascript:void(0);" onclick="check_perform_sedit()" class="btn btn-warning btn-sm">Edit</a>
         <a href=""
            onclick="event.preventDefault(); document.getElementById('delete-form').submit();"
            class="btn btn-danger btn-sm">
            Delete
         </a>
-       
-
     
         <form id="delete-form" action="" method="POST" style="display: none;">
             @csrf
             @method('DELETE')
         </form>
+        <a href="javascript:void(0);" class="btn btn-info btn-sm"><span class="fa fa-briefcase"></span>&nbsp;Used Coupons</a>
     </div>
     
 
@@ -39,13 +38,14 @@
                         <tr>
                             <th><input type="checkbox"></th>
                             <th>#</th>
-                            <th>Photo</th>
-                            <th>PDF</th>
-                            <th>Title</th>
-                            <th>Subject</th>
-                            <th>Topic</th>
-                            <th>Stopic</th>
-                            <th>Link</th>
+                            <th>Coupon Name</th>
+                            <th>Coupon Amount</th>
+                            <th>Minimum Order</th>
+                            <th>Coupon Code</th>
+                            <th>No.Of Coupon </th>
+                            <th>User per Customer</th>
+                            <th>Start & End date</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -53,14 +53,16 @@
                         <tr>
                             <td><input type="checkbox"></td>
                             <td>1</td>
-                            <td><img src="" alt="">	</td>
-                            <td>pdf</td>
-                            <td>Hindi</td>
-                            <td>Hindi</td>
-                            <td>Medical Surgical Nursing	</td>
-                            <td>NURSING EXAM </td>
-                            <td>###</td>
-                           
+                            <td>Happy Teachers Day and Ganesh Chaturthi	</td>
+                            <td>50.00%</td>
+                            <td>2000.00</td>
+                            <td>flat50	</td>
+                            <td>100</td>
+                            <td>1</td>
+                            <td>05-09-2024
+                                to
+                                10-09-2024</td>
+                            <td><aspan class="badge badge-danger light border-0">Suspend</span></td>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-primary btn-sm dropdown-toggle"
@@ -72,16 +74,9 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item text-success" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
-                                            <i class="fa fa-arrows-alt"></i> view
-                                        </a>
-                                        <a class="dropdown-item" href="{{ url('admin/studymaterials/{id}/edit') }}" onclick="check_perform_sedit()">
-                                            <i class="fa fa-edit"></i> Edit
-                                        </a>
-                                        <a class="dropdown-item text-danger" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
-                                            <i class="fa fa-trash"></i> Delete
-                                        </a>
-                                       
+                                        <li><a href="javascript:void(0);"><span class="fa fa-server"></span>&nbsp;Used Coupons</a></li>                                       
+                                        <a href="javascript:void(0);" name="editallfrm" ><span class="fa fa-edit"></span>&nbsp;Edit</a>
+                                        <li><a href="javascript:void(0);" onclick="check_perform_sdelete('17');"><span class="fa fa-trash"></span>&nbsp;Delete</a></li>                                        
                                     </div>
                                 </div>
                             </td>

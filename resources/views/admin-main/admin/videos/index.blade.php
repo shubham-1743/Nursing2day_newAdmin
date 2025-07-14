@@ -3,19 +3,19 @@
 
 @section('content')
 <div class="container-fluid">
-    <h3>Study Material</h3>
+    <h3>Video
+    </h3>
 
     <!-- Top action buttons -->
     <div class="mb-3">
-        <a href="{{url('admin/studymaterials/create')}}" class="btn btn-success btn-sm">+ Add New Study-Material</a>
-        
+        <a href="{{url('admin/videos/create')}}" class="btn btn-success btn-sm">+ Add New Video
+        </a>
+        <a href="javascript:void(0);" onclick="check_perform_sedit()" class="btn btn-warning btn-sm">Edit</a>
         <a href=""
            onclick="event.preventDefault(); document.getElementById('delete-form').submit();"
            class="btn btn-danger btn-sm">
            Delete
         </a>
-       
-
     
         <form id="delete-form" action="" method="POST" style="display: none;">
             @csrf
@@ -39,8 +39,6 @@
                         <tr>
                             <th><input type="checkbox"></th>
                             <th>#</th>
-                            <th>Photo</th>
-                            <th>PDF</th>
                             <th>Title</th>
                             <th>Subject</th>
                             <th>Topic</th>
@@ -53,14 +51,12 @@
                         <tr>
                             <td><input type="checkbox"></td>
                             <td>1</td>
-                            <td><img src="" alt="">	</td>
-                            <td>pdf</td>
-                            <td>Hindi</td>
-                            <td>Hindi</td>
-                            <td>Medical Surgical Nursing	</td>
-                            <td>NURSING EXAM </td>
-                            <td>###</td>
-                           
+                            <td>14 July !! Live Class -3 !! NEET/ CUET B.Sc. Nursing Entrance 2025	</td>
+                            <td>NEET/ CUET B.Sc. Nursing Entrance	</td>
+                            <td>NEET/ CUET B.Sc. Nursing Entrance 2025	</td>
+                            <td>NEET/ CUET B.Sc. Nursing Entrance 2025	</td>
+                            <td>https://youtu.be/xagRAmNXFBs	
+                            </td>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-primary btn-sm dropdown-toggle"
@@ -72,16 +68,9 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item text-success" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
-                                            <i class="fa fa-arrows-alt"></i> view
-                                        </a>
-                                        <a class="dropdown-item" href="{{ url('admin/studymaterials/{id}/edit') }}" onclick="check_perform_sedit()">
-                                            <i class="fa fa-edit"></i> Edit
-                                        </a>
-                                        <a class="dropdown-item text-danger" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
-                                            <i class="fa fa-trash"></i> Delete
-                                        </a>
-                                       
+                                        <li><a href="javascript:void(0);" ><span class="fa fa-arrows-alt"></span>&nbsp;View</a></li>
+                                        <li><a href="{{ url('admin/videos/{id}/edit') }}" name="editallfrm" ><span class="fa fa-edit"></span>&nbsp;Edit</a></li>
+                                        <li><a href="javascript:void(0);" onclick="check_perform_sdelete('7081');"><span class="fa fa-trash"></span>&nbsp;Delete</a></li>
                                     </div>
                                 </div>
                             </td>

@@ -3,7 +3,8 @@
 
 @section('content')
 <div class="container-fluid">
-    <h3>Study Material</h3>
+    <h3>Mailbox
+    </h3>
 
     <!-- Top action buttons -->
     <div class="mb-3">

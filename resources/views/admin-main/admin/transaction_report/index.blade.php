@@ -72,13 +72,13 @@
                     <tbody>
                        
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>9966338855</td>
+                            <td>295</td>
+                            <td>1</td>
+                            <td>ip20</td>
+                            <td>2000</td>
+                            <td>400</td>
+                            <td>20/6/2025</td>
                         </tr>
                        
                     </tbody>

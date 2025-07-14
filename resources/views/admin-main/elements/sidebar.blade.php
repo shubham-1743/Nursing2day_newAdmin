@@ -170,7 +170,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/current_affairs')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -183,7 +183,7 @@
                 </a>
             </li>
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/CustomNotifications')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -195,7 +195,7 @@
                     <span class="nav-text">CustomNotifications</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/results')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -207,7 +207,7 @@
                     <span class="nav-text">Results</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/lives')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -221,7 +221,7 @@
             </li>
 
 
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/students')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -233,7 +233,7 @@
                     <span class="nav-text">Students</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/Coupons')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -245,7 +245,7 @@
                     <span class="nav-text">Coupons</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/videos')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -257,7 +257,7 @@
                     <span class="nav-text">Videos</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/sale_reports')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
@@ -269,7 +269,7 @@
                     <span class="nav-text">Sales Report</span>
                 </a>
             </li>
-            <li><a href="" class="" aria-expanded="false">
+            <li><a href="{{url('admin/mails')}}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75713 9.35157V15.64" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" />
