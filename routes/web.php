@@ -21,6 +21,29 @@ use App\Http\Controllers\AdminMain\SubtopicController;
 use App\Http\Controllers\AdminMain\TopicController;
 use App\Http\Controllers\AdminMain\UserController;
 use App\Http\Controllers\AdminMain\VideoController;
+use App\Http\Controllers\Configuration\Certificate_signature;
+use App\Http\Controllers\Configuration\CurrencyController;
+use App\Http\Controllers\Configuration\Diffculty_level;
+use App\Http\Controllers\Configuration\GeneralController;
+use App\Http\Controllers\Configuration\LanguagesController;
+use App\Http\Controllers\Configuration\MenuName;
+use App\Http\Controllers\Configuration\Organisation_logo;
+use App\Http\Controllers\Configuration\PaymentSettingController;
+use App\Http\Controllers\Configuration\Question_type;
+use App\Http\Controllers\Content\AdvertisementController;
+use App\Http\Controllers\Content\HelpcontentController;
+use App\Http\Controllers\Content\HomecontentController;
+use App\Http\Controllers\Content\HomesliderController;
+use App\Http\Controllers\Content\NewsController;
+use App\Http\Controllers\Content\PageController;
+use App\Http\Controllers\Content\SeoController;
+use App\Http\Controllers\Content\TestimonialController;
+use App\Http\Controllers\EmailSetting\EmailsettingController;
+use App\Http\Controllers\EmailSetting\EmailtemplateController;
+use App\Http\Controllers\EmailSetting\SendemailController;
+use App\Http\Controllers\EmailSetting\SendsmController;
+use App\Http\Controllers\EmailSetting\SmssettingController;
+use App\Http\Controllers\EmailSetting\SmstemplateController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
@@ -78,6 +101,8 @@ Route::middleware('auth')->group(function () {
 
         // users controller//
         Route::resource('users', UserController::class);
+        // Route::get('users/assign', [UserController::class, 'assignrights'])->name('users.assignrights');
+
 
         // packages controller//
         Route::resource('packages', PackageController::class);
@@ -129,6 +154,79 @@ Route::middleware('auth')->group(function () {
 
        // mails//
        Route::resource('mails',MailController::class);
+
+       // configuration menus//
+       //General//
+       Route::resource('general', GeneralController::class);
+
+       //paymentsettings
+       Route::resource('paymentsettings', PaymentSettingController::class);
+
+       //Languages//
+       Route::resource('Languages', LanguagesController::class);
+
+       //currency//
+       Route::resource('currency', CurrencyController::class);
+
+       //organisation_logo//
+       Route::resource('Weblogos', Organisation_logo::class);
+
+       //certificate_signature//
+       Route::resource('Signatures', Certificate_signature::class);
+
+       //diffculty_leval//
+       Route::resource('diffcultys', Diffculty_level::class);
+
+       //question type//
+       Route::resource('qtypes', Question_type::class);
+
+       //menuname//
+       Route::resource('Menunames', MenuName::class);
+
+       // content//
+       //news//
+       Route::resource('news', NewsController::class);
+
+       //page//
+       Route::resource('pages', PageController::class);
+
+       //home slider//
+       Route::resource('Slides',HomesliderController::class);
+
+       //home content//
+       Route::resource('Homesections', HomecontentController::class);
+
+       //help content//
+       Route::resource('Helpcontents',HelpcontentController::class);
+
+       //Testimonials//
+       Route::resource('Testimonials',TestimonialController::class);
+
+       //Advertisements//
+       Route::resource('Advertisements',AdvertisementController::class);
+
+       //seo//
+       Route::resource('seos', SeoController::class);
+
+       //EmailSetting//
+       Route::resource('Emailsettings', EmailsettingController::class);
+
+       //Emailtemplate//
+       Route::resource('Emailtemplates', EmailtemplateController::class);
+
+       //Sendemails//
+       Route::resource('Sendemails',SendemailController::class);
+
+       //Smssettings//
+       Route::resource('Smssettings',SmssettingController::class);
+
+       //Smstemplates//
+       Route::resource('Smstemplates',SmstemplateController::class);
+
+       //Sendsms//
+       Route::resource('Sendsms',SendsmController::class);
+
+
 
        
 

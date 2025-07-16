@@ -1,28 +1,26 @@
 <?php
 
-namespace App\Http\Controllers\AdminMain;
+namespace App\Http\Controllers\Configuration;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class MailController extends Controller
+class MenuName extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin-main.admin.mails.index');
+        return view('admin-main.admin.configuration.menu_names.index');
     }
-
-   
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('admin-main.admin.mails.compose');
+        //
     }
 
     /**
@@ -46,7 +44,7 @@ class MailController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('admin-main.admin.configuration.menu_names.edit');
     }
 
     /**

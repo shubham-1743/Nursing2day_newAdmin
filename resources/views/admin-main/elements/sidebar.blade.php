@@ -1,7 +1,7 @@
 <div class="deznav">
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
-            <li class="menu-title">YOUR COMPANY</li>
+            {{-- <li class="menu-title">YOUR COMPANY</li> --}}
             <li><a href="{{ url('admin/dashboard') }}" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,15 +296,15 @@
 
                 <!-- Submenu -->
                 <ul aria-expanded="false">
-                    <li><a href="">General</a></li>
-                    <li><a href="">Payment Settings</a></li>
-                    <li><a href="">Question Language</a></li>
-                    <li><a href="">Currency</a></li>
-                    <li><a href="">Organisation Logo</a></li>
-                    <li><a href="">Certificate Signature</a></li>
-                    <li><a href="">Diffculty Level</a></li>
-                    <li><a href="">Question Type</a></li>
-                    <li><a href="">Menu Names</a></li>
+                    <li><a href="{{url('admin/general')}}">General</a></li>
+                    <li><a href="{{url('admin/paymentsettings')}}">Payment Settings</a></li>
+                    <li><a href="{{url('admin/Languages')}}">Question Language</a></li>
+                    <li><a href="{{url('admin/currency')}}">Currency</a></li>
+                    <li><a href="{{url('admin/Weblogos')}}">Organisation Logo</a></li>
+                    <li><a href="{{url('admin/Signatures')}}">Certificate Signature</a></li>
+                    <li><a href="{{url('admin/diffcultys')}}">Diffculty Level</a></li>
+                    <li><a href="{{url('admin/qtypes')}}">Question Type</a></li>
+                    <li><a href="{{url('admin/Menunames')}}">Menu Names</a></li>
 
                 </ul>
             </li>
@@ -324,14 +324,14 @@
 
                 <!-- Submenu -->
                 <ul aria-expanded="false">
-                    <li><a href="">News</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Home Slides</a></li>
-                    <li><a href="">Home Content</a></li>
-                    <li><a href="">Help Content</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">Advertisement</a></li>
-                    <li><a href="">Seo</a></li>
+                    <li><a href="{{url('admin/news')}}">News</a></li>
+                    <li><a href="{{url('admin/pages')}}">Pages</a></li>
+                    <li><a href="{{url('admin/Slides')}}">Home Slides</a></li>
+                    <li><a href="{{url('admin/Homesections')}}">Home Content</a></li>
+                    <li><a href="{{url('admin/Helpcontents')}}">Help Content</a></li>
+                    <li><a href="{{url('admin/Testimonials')}}">Testimonial</a></li>
+                    <li><a href="{{url('admin/Advertisements')}}">Advertisement</a></li>
+                    <li><a href="{{url('admin/seos')}}">Seo</a></li>
 
 
                 </ul>
@@ -351,12 +351,12 @@
 
                 <!-- Submenu -->
                 <ul aria-expanded="false">
-                    <li><a href="">E-Mail Settings</a></li>
-                    <li><a href="">Email Templates</a></li>
-                    <li><a href="">Send Emails</a></li>
-                    <li><a href="">SMS Settings</a></li>
-                    <li><a href="">SMS Templates</a></li>
-                    <li><a href="">Send Sms</a></li>
+                    <li><a href="{{url('admin/Emailsettings')}}">E-Mail Settings</a></li>
+                    <li><a href="{{url('admin/Emailtemplates')}}">Email Templates</a></li>
+                    <li><a href="{{url('admin/Sendemails')}}">Send Emails</a></li>
+                    <li><a href="{{url('admin/Smssettings')}}">SMS Settings</a></li>
+                    <li><a href="{{url('admin/Smstemplates')}}">SMS Templates</a></li>
+                    <li><a href="{{url('admin/Sendsms')}}">Send Sms</a></li>
 
 
                 </ul>

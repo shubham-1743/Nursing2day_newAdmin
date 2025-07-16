@@ -1,28 +1,27 @@
 <?php
 
-namespace App\Http\Controllers\AdminMain;
+namespace App\Http\Controllers\Content;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class MailController extends Controller
+class HelpcontentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin-main.admin.mails.index');
+        return view('admin-main.admin.contents.help_content.index');
     }
-
-   
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('admin-main.admin.mails.compose');
+        return view('admin-main.admin.contents.help_content.create');
+
     }
 
     /**
@@ -46,7 +45,8 @@ class MailController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('admin-main.admin.contents.help_content.edit');
+
     }
 
     /**

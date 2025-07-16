@@ -66,4 +66,9 @@ class UserController extends Controller
     {
         //
     }
+
+//     public function assignrights() {
+//  dd('hello');
+//         return view('admin-main.admin.users.assignright');
+//     }
 }
