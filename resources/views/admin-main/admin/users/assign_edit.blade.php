@@ -1,10 +1,10 @@
 @extends('admin-main.layouts.default')
 @section('content')
+
 <div class="page-titles">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Add Groups</a></li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)">Edit Level Users</a></li>
     </ol>
-
 </div>
 
 <div class="container-fluid p-2">
@@ -14,21 +14,30 @@
                 <div class="card-body">
                     <form action="" method="POST">
                         @csrf
-                        <div class="mb-3">
-                            <label for="group_name" class="form-label">Group Name</label>
-                            <input type="text" name="group_name" id="group_name" class="form-control" placeholder="Group Name" value="{{ old('group_name') }}">
 
+                        
+
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Leval User</label>
+                            <input type="text" name="leval_name"  class="form-control" placeholder="Leval User" value="{{ old('username') }}">
                         </div>
+
+                        
+
+                        <!-- Buttons -->
                         <button type="submit" class="btn btn-success">
-                            <i class="fa fa-plus"></i> Save
+                            <i class="fa fa-refresh"></i> Update
                         </button>
-                        <a href="{{ url('admin/groups') }}" class="btn btn-danger">Close</a>
+                        <a href="{{ url('users/assign-rights') }}" class="btn btn-danger">Close</a>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection
+
 @push('scripts')
+
 @endpush

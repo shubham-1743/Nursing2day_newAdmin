@@ -14,7 +14,9 @@
            class="btn btn-danger btn-sm">
            Delete
         </a>
-        <a href="" class="btn btn-success btn-sm">+ Assign Form Rights</a>
+        <a href="{{ route('users.assignrights') }}" class="btn btn-success btn-sm">+ Assign Form Rights</a>
+
+        
 
     
         <form id="delete-form" action="" method="POST" style="display: none;">

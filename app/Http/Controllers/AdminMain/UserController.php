@@ -67,8 +67,21 @@ class UserController extends Controller
         //
     }
 
-//     public function assignrights() {
-//  dd('hello');
-//         return view('admin-main.admin.users.assignright');
-//     }
+    public function assignrights() {
+        
+ 
+        return view('admin-main.admin.users.assignright');
+    }
+
+    public function assign_create() {
+        return view('admin-main.admin.users.assign_create');
+    }
+
+    public function assign_edit($id) {
+        return view('admin-main.admin.users.assign_edit');
+    }
+
+    public function assign_premission() {
+        return view('admin-main.admin.users.assign_premission');
+    }
 }

@@ -60,6 +60,13 @@
                 <table class="table table-bordered" id="transaction-table">
                     <thead>
                         <tr>
+                            <th>Sr.NO</th>
+                            <th>Transaction Status</th>
+                            <th>Payment Mode</th>
+                            <th>User Name</th>
+                            <th>Category Name</th>
+                            <th>Shipping Address</th>
+                            <th>User Email</th>
                             <th>User Phone No.</th>
                             <th>Transaction ID</th>
                             <th>Packages Purchased</th>
@@ -72,6 +79,13 @@
                     <tbody>
                        
                         <tr>
+                            <td>1</td>
+                            <td><span class="badge badge-success light border-0">Success</span></td>
+                            <td>Free</td>
+                            <td>ramniwas Choudhary	</td>
+                            <td>Test Paper</td>
+                            <td>Jaipur</td>
+                            <td>mr.choudhary.2008@gmail.com	</td>
                             <td>9966338855</td>
                             <td>295</td>
                             <td>1</td>

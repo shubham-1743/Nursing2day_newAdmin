@@ -69,7 +69,7 @@
 
                         <!-- Buttons -->
                         <button type="submit" class="btn btn-success">
-                            <i class="fa fa-plus"></i> Save
+                            <i class="fa fa-refresh"></i> Update
                         </button>
                         <a href="{{ url('admin/users') }}" class="btn btn-danger">Close</a>
                     </form>

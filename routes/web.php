@@ -87,9 +87,17 @@ Route::middleware('auth')->group(function () {
     
    
     
-    
+    Route::get('/users/assign-rights', [UserController::class, 'assignrights'])->name('users.assignrights');
+    Route::get('/users/assign-create',[UserController::class,'assign_create']);
+    Route::get('/users/assign-premission',[UserController::class,'assign_premission'])->name('users.assign_premission');
+    Route::get('/users/assign_edit/{id}', [UserController::class, 'assign_edit'])->name('users.assign_edit');
+
     // Admin Route
     Route::group(['prefix' => 'admin'], function () {
+
+         // users controller//
+         Route::resource('users', UserController::class);
+ 
 
         Route::resource('transaction_reports', TransactionReport::class);
 
@@ -99,10 +107,7 @@ Route::middleware('auth')->group(function () {
         //courses controller//
         Route::resource('courses', CouresController::class);
 
-        // users controller//
-        Route::resource('users', UserController::class);
-        // Route::get('users/assign', [UserController::class, 'assignrights'])->name('users.assignrights');
-
+       
 
         // packages controller//
         Route::resource('packages', PackageController::class);
@@ -280,3 +285,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+require __DIR__.'/student.php';

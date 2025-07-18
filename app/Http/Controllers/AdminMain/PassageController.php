@@ -37,7 +37,7 @@ class PassageController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**

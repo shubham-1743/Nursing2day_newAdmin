@@ -59,7 +59,7 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item btn-success" href="javascript:void(0);" onclick="check_perform_sedit()">
+                                        <a class="dropdown-item btn-success" href="{{url('admin/questions/create')}}" onclick="check_perform_sedit()">
                                             <i class="fa fa-edit"></i>+ Add Question
                                         </a>
                                         <a class="dropdown-item" href="{{ url('admin/passages/{id}/edit') }}" onclick="check_perform_sedit()">
