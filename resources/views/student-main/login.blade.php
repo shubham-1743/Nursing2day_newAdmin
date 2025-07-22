@@ -1,4 +1,4 @@
-@extends('student-main.layouts.header')
+@extends('student-main.layouts.master')
 
 @section('content')
 
@@ -15,10 +15,12 @@
         <form action="{{ route('student.login.submit') }}" method="post">
             @csrf
 
-            <input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}">
+            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="" placeholder="Email">
+
             @error('email')
-            <small class="text-danger">{{ $message }}</small>
+            <div class="invalid-feedback">{{ $message }}</div>
             @enderror
+
 
             <input type="password" name="password" class="form-control" placeholder="Password">
             @error('password')

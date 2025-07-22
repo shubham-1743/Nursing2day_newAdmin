@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+
+    public function index() {
+        return view('student-main.user_view');
+    }
     public function dashboard() {
         return view('student-main.dashboard');
     }
@@ -20,7 +24,12 @@ class LoginController extends Controller
 
     public function student_login(Request $request) {
         $request->validate([
-            'email' => 'required|email',
+            'email' => [
+                'required',
+                'email',
+                'unique:users,email',
+                'regex:/^[a-zA-Z0-9._%+-]+@gmail\.com$/'
+            ],
             'password' => 'required',
         ]);
 

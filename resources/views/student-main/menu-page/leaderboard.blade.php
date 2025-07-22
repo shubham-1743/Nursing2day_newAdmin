@@ -22,7 +22,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="" alt="image"></td>
+                            <td><img src="{{asset('images/avatar/2.jpg')}}" alt="image" style="height: 70px; width: 70px;"></td>
                             <td>1</td>
                             <td>Rohit</td>
                             <td>100.00%</td>

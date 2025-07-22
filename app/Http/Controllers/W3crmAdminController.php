@@ -47,7 +47,7 @@ class W3crmAdminController extends Controller
         Auth::login($user); 
     
         // return redirect()->intended('/admin/dashboard');
-        return redirect()->route('dashboard')->with('success', "user successgfully....!");
+        return redirect()->route('admin.dashboard')->with('success', "user successgfully....!");
     }
     
     // public function logout(Request $request)
@@ -69,7 +69,8 @@ class W3crmAdminController extends Controller
     {
         Auth::logout();
     
-        return redirect('/');
+        
+    return redirect()->route('admin.login')->with('success', 'Logged out successfully.');
     }
 
     

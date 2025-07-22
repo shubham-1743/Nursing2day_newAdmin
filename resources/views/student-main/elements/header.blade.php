@@ -1,3 +1,75 @@
+<style>
+    /* Container for icon + popup */
+    .popup-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Popup hidden by default */
+    .popup-content {
+        display: none;
+        position: absolute;
+        top: 35px;
+        right: 0;
+        width: 280px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        z-index: 999;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Show popup on hover */
+    .popup-container:hover .popup-content {
+        display: block;
+    }
+
+    /* Continue Shopping Button */
+    .continue-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Price section styles */
+    .textblack {
+        color: #000;
+        font-size: 14px;
+    }
+
+    .col-md-9,
+    .col-md-3,
+    .col-md-12 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .col-md-9 {
+        width: 65%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .col-md-3 {
+        width: 30%;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+</style>
+
 <div class="chatbox">
     <div class="chatbox-close"></div>
     <div class="custom-tab-1">
@@ -550,68 +622,43 @@
 
                 </div>
                 <ul class="navbar-nav header-right">
-                    <li class="nav-item dropdown notification_dropdown">
-                        <a class="nav-link " href="javascript:void(0);" data-bs-toggle="dropdown">
 
 
+                    <li class="nav-item dropdown notification_dropdown popup-container">
+                        <a class="nav-link" href="javascript:void(0);">
+                            <svg fill="#000000" width="25" height="25" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 16 3 C 13.253906 3 11 5.253906 11 8 L 11 9 L 6.0625 9 L 6 9.9375 L 5 27.9375 L 4.9375 29 L 27.0625 29 L 27 27.9375 L 26 9.9375 L 25.9375 9 L 21 9 L 21 8 C 21 5.253906 18.746094 3 16 3 Z M 16 5 C 17.65625 5 19 6.34375 19 8 L 19 9 L 13 9 L 13 8 C 13 6.34375 14.34375 5 16 5 Z M 7.9375 11 L 11 11 L 11 14 L 13 14 L 13 11 L 19 11 L 19 14 L 21 14 L 21 11 L 24.0625 11 L 24.9375 27 L 7.0625 27 Z" />
+                            </svg>
+                            <span><b>0</b></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <div id="DZ_W_TimeLine02" class="widget-timeline dz-scroll style-1 p-3 height370">
-                                <ul class="timeline">
-                                    <li>
-                                        <div class="timeline-badge primary"></div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>10 minutes ago</span>
-                                            <h6 class="mb-0">Youtube, a video-sharing website, goes live <strong class="text-primary">$500</strong>.</h6>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="timeline-badge info">
-                                        </div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>20 minutes ago</span>
-                                            <h6 class="mb-0">New order placed <strong class="text-info">#XF-2356.</strong></h6>
-                                            <p class="mb-0">Quisque a consequat ante Sit amet magna at volutapt...</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="timeline-badge danger">
-                                        </div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>30 minutes ago</span>
-                                            <h6 class="mb-0">john just buy your product <strong class="text-warning">Sell $250</strong></h6>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="timeline-badge success">
-                                        </div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>15 minutes ago</span>
-                                            <h6 class="mb-0">StumbleUpon is acquired by eBay. </h6>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="timeline-badge warning">
-                                        </div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>20 minutes ago</span>
-                                            <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="timeline-badge dark">
-                                        </div>
-                                        <a class="timeline-panel text-muted" href="javascript:void(0);">
-                                            <span>20 minutes ago</span>
-                                            <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
-                                        </a>
-                                    </li>
-                                </ul>
+
+                        <!-- Popup Content -->
+                        <div class="popup-content">
+                            <svg fill="#000000" width="25" height="25" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 16 3 C 13.253906 3 11 5.253906 11 8 L 11 9 L 6.0625 9 L 6 9.9375 L 5 27.9375 L 4.9375 29 L 27.0625 29 L 27 27.9375 L 26 9.9375 L 25.9375 9 L 21 9 L 21 8 C 21 5.253906 18.746094 3 16 3 Z M 16 5 C 17.65625 5 19 6.34375 19 8 L 19 9 L 13 9 L 13 8 C 13 6.34375 14.34375 5 16 5 Z M 7.9375 11 L 11 11 L 11 14 L 13 14 L 13 11 L 19 11 L 19 14 L 21 14 L 21 11 L 24.0625 11 L 24.9375 27 L 7.0625 27 Z" />
+                            </svg>
+                            <p>your shopping bag is empty</p>
+                            <button class="continue-btn" onclick="window.location.href=''">CONTINUE SHOPPING</button>
+                            <hr>
+                            <div class="col-md-9">
+                                <span class="textblack"><strong>TOTAL PRICE</strong></span>
+                            </div>
+                            <div class="col-md-3 p0" style="text-align: center;">
+                                <span class="textblack">
+                                    <strong>₹ 0</strong>
+                                </span>
+                            </div>
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="javascript:void(0);" class="btn btn-success shopCart" style="background: #68c6ec; border: #68c6ec;">
+                                    <span>View Bag</span>
+                                </a>
                             </div>
                         </div>
                     </li>
+
+
                     <li class="nav-item dropdown notification_dropdown">
-                        <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link" href="{{route('student.mail')}}">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.9026 8.85114L13.4593 12.4642C12.6198 13.1302 11.4387 13.1302 10.5992 12.4642L6.11844 8.85114" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -621,26 +668,18 @@
                         </a>
 
                     </li>
-                    <li class="nav-item dropdown notification_dropdown">
-                        <a class="nav-link bell-link" href="javascript:void(0);">
 
-
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown notification_dropdown">
-
-                    </li>
                     <li class="nav-item ps-3">
                         <div class="header-info2 d-flex align-items-center">
                             <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="header-info2 d-flex align-items-center">
                                     <i class="fa-solid fa-user"></i>
 
-                                    
+
 
                                 </div>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-end" >
+                            <div class="dropdown-menu dropdown-menu-end">
                                 <div class="card border-0 mb-0">
                                     <div class="card-header py-2">
                                         <div class="products">
@@ -652,7 +691,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body px-0 py-2">
-                                        <a href="#" class="dropdown-item ai-icon ">
+                                        <a href="{{route('student.profile')}}" class="dropdown-item ai-icon ">
                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 15.3462C8.11714 15.3462 4.81429 15.931 4.81429 18.2729C4.81429 20.6148 8.09619 21.2205 11.9848 21.2205C15.8524 21.2205 19.1543 20.6348 19.1543 18.2938C19.1543 15.9529 15.8733 15.3462 11.9848 15.3462Z" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 12.0059C14.5229 12.0059 16.58 9.94779 16.58 7.40969C16.58 4.8716 14.5229 2.81445 11.9848 2.81445C9.44667 2.81445 7.38857 4.8716 7.38857 7.40969C7.38 9.93922 9.42381 11.9973 11.9524 12.0059H11.9848Z" stroke="var(--primary)" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round" />
@@ -661,7 +700,7 @@
                                             <span class="ms-2">My Profile </span>
                                         </a>
 
-                                        <a href="#" class="dropdown-item ai-icon ">
+                                        <a href="{{route('student.changepass')}}" class="dropdown-item ai-icon ">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17 11H7C5.89543 11 5 11.8954 5 13V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V13C19 11.8954 18.1046 11 17 11Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                                 <path d="M8 11V7C8 5.34315 9.34315 4 11 4H13C14.6569 4 16 5.34315 16 7V11" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -674,16 +713,14 @@
                                         <form method="POST" action="{{ route('student.logout') }}" style="display: inline;">
                                             @csrf
                                             <button type="submit" class="dropdown-item ai-icon">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 2V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18.36 5.64C20.5076 7.78752 21.2593 11.0145 20.3362 13.9502C19.4131 16.8858 16.9606 19.1613 13.9289 19.8C10.8972 20.4386 7.74296 19.3384 5.63604 17.2315C3.52911 15.1246 2.42893 11.9703 3.06752 8.93863C3.70611 5.90696 5.98157 3.45443 8.91719 2.53134" 
-                                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 2V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18.36 5.64C20.5076 7.78752 21.2593 11.0145 20.3362 13.9502C19.4131 16.8858 16.9606 19.1613 13.9289 19.8C10.8972 20.4386 7.74296 19.3384 5.63604 17.2315C3.52911 15.1246 2.42893 11.9703 3.06752 8.93863C3.70611 5.90696 5.98157 3.45443 8.91719 2.53134" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                                 <span style="margin-left: 8px;">Logout</span>
                                             </button>
                                         </form>
-                                        
+
                                     </div>
 
                                 </div>

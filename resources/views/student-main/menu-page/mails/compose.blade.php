@@ -1,5 +1,4 @@
-@extends('admin-main.layouts.default')
-
+@extends('student-main.layouts.default')
 
 @section('content')
 <div class="panel panel-custom">
@@ -44,7 +43,7 @@
 @endsection
 
 @push('scripts')
-{{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
 <script>
@@ -55,7 +54,7 @@
                 height: 300,
                 menubar: true,
                 plugins: 'lists link image preview code',
-                toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist | link image | code preview | blocks fontfamily fontsize |link image media table mergetags| exportpdf | exportpdf | exportword | importword | markdown |',
+                toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist | link image | code preview',
                 branding: false
             });
         } else {

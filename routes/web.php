@@ -73,15 +73,16 @@ Route::controller(W3crmAdminController::class)->group(function () {
     });
 
     Route::get('page-forgot-password ','page_forgot_password');
-    Route::get('/','page_login')->name('login');
+    Route::get('/admin/login', 'page_login')->name('admin.login'); 
+    // Route::get('/','page_login')->name('admin.login');
     Route::get('register ','page_register');
     
     
 });
 
-Route::post('/admin/login', [W3crmAdminController::class, 'login'])->name('admin.login');
+Route::post('/admin/login', [W3crmAdminController::class, 'login'])->name('admin.login.submit');
 
-Route::get('/admin/dashboard',[W3crmAdminController::class, 'dashboard_2'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/admin/dashboard',[W3crmAdminController::class, 'dashboard_2'])->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 Route::middleware('auth')->group(function () {
     

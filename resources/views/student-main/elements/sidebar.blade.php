@@ -12,7 +12,7 @@
                      <span class="nav-text">Dashboard</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Package')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
                          <svg width="22" height="22" viewBox="0 -2.55 20.094 20.094" xmlns="http://www.w3.org/2000/svg">
                              <path id="Path_15" data-name="Path 15" d="M518.8,829.36c-.678,1.556-1.213,2.66-2.709,2.66h-8.128a2.664,2.664,0,0,1-2.71-2.66l-.8-7.36h-3.484v-1h4.375l.361,3.014h15.358Zm-12.556,0a1.874,1.874,0,0,0,1.72,1.633H516.1c.9,0,1.271-.72,1.657-1.633l1.837-4.382H505.8Zm1.225,3.64a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,507.474,833Zm-.531,1.969h1V834h-1ZM515.474,833a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,515.474,833Zm-.531,1.969h1V834h-1Z" transform="translate(-500.973 -821)" fill="#444"></path>
@@ -45,7 +45,7 @@
                      <span class="nav-text">My Exam</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Quiz')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
                          <svg width="22" height="22" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                              <title>ic_fluent_notebook_question_mark_24_regular</title>
@@ -61,7 +61,7 @@
                      <span class="nav-text">My Quiz</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.StudyMaterial')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
                          <svg width="22" height="22" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                              <title>ic_fluent_notebook_question_mark_24_regular</title>
@@ -77,7 +77,7 @@
                      <span class="nav-text">My Study Materials</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.video')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
 
@@ -91,7 +91,7 @@
                      <span class="nav-text">My Study Video</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.CurrentAffair')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
                          <svg fill="#000000" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +101,7 @@
                      <span class="nav-text">Current Affairs</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Result')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
                          <svg width="22" height="22" viewBox="-1 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +156,7 @@
                  </a>
              </li>
 
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Bookmark')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
 
@@ -174,7 +174,7 @@
                  </a>
              </li>
 
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Groupperformance')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
 
@@ -201,7 +201,7 @@
                  </a>
              </li>
 
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Payment')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
 
@@ -225,7 +225,7 @@
                  </a>
              </li>
             
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.mail')}}" class="" aria-expanded="false">
                      <div class="menu-icon">
 
                          <svg fill="#000000" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
@@ -234,7 +234,7 @@
                      <span class="nav-text">Mailbox</span>
                  </a>
              </li>
-             <li><a href="" class="" aria-expanded="false">
+             <li><a href="{{route('student.Help')}}" class="" aria-expanded="false">
                 <div class="menu-icon">
 
 
