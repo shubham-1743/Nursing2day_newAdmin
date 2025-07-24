@@ -63,4 +63,8 @@ class StudentController extends Controller
     {
         //
     }
+
+    public function Iestudents() {
+        return view('admin-main.admin.student.Iestudents');
+    }
 }

@@ -61,8 +61,12 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
-                                        <li><a href="javascript:void(0);"><span class="fa fa-arrows-alt"></span>&nbsp;View</a></li>  
-                                        <a href="{{ url('admin/Emailtemplates/{id}/edit') }}" name="editallfrm" ><span class="fa fa-edit"></span>&nbsp;Edit</a>
+                                       
+                                        <a class="dropdown-item text-success" data-bs-toggle="modal" data-bs-target="#viewmodel">
+                                            <i class="fa fa-arrows-alt"></i> View
+                                        </a>
+                                        <a class="dropdown-item text-success" href="{{ url('admin/Emailtemplates/{id}/edit') }}">
+                                            <i class="fa fa-edit"></i> Edit
                                     </div>
                                 </div>
                             </td>
@@ -82,26 +86,46 @@
         <input type="text" class="form-control w-25" placeholder="Search">
         <button class="btn btn-success ms-2"><i class="fa fa-search"></i></button>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewmodel" tabindex="-1" aria-labelledby="viewmodel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewmodel">Email Template</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                       
+                        <div class="col-md-8">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>Name</th>
+                                        <td>Admin Forgot Password</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Template</th>
+                                        <td>Dear $name,
+
+                                            Please click the following link to finish forgot password:</td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 @push('scripts')
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Popper.js (required for Bootstrap 4 dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Bootstrap 4 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    {{-- <script>
-        function check_perform_sedit() {
-            alert('Edit clicked');
-        }
-
-        function check_perform_sdelete(id) {
-            alert('Delete clicked with ID: ' + id);
-        }
-    </script> --}}
 @endpush
 

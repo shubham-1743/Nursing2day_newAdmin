@@ -40,9 +40,14 @@
                                             aria-expanded="false">
                                         Action
                                     </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                                      
-                                        <a href="{{ url('admin/Homesections/{id}/edit') }}" name="editallfrm" ><span class="fa fa-edit"></span>&nbsp;Edit</a>
-                                        <li><a href="javascript:void(0);"><i class="fa fa-photo"></i>&nbsp;Change Photo</a></li> 
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+                                        <a class="dropdown-item text-success" data-bs-toggle="modal" data-bs-target="#updatePhotoModal">
+                                            <i class="fa fa-photo"></i> Change Photo
+                                        </a>
+                                        <a class="dropdown-item text-success" href="{{ url('admin/Homesections/{id}/edit') }}">
+                                            <i class="fa fa-edit"></i> Edit
+                                        </a>                                     
+                                       
                                 </div>
                             </td>
                             
@@ -53,6 +58,42 @@
         </div>
     </div>
 
+     <!-- Modal: Update Photo -->
+<div class="modal fade" id="updatePhotoModal" tabindex="-1" role="dialog" aria-labelledby="updatePhotoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header border-bottom">
+                <h5 class="modal-title" id="updatePhotoLabel">Update Photo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body -->
+            <form action="" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('POST') 
+
+                <div class="modal-body text-center">
+                    <label class="mb-2">Upload Slide <small>(1350×550)</small></label><br>
+                    <input type="file" name="photo" accept="image/*" required>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fa fa-refresh"></i> Update
+                    </button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fa fa-times"></i> Cancel
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
     <!-- Bottom search -->
     {{-- <div class="mt-3 d-flex">
         <input type="text" class="form-control w-25" placeholder="Search">
@@ -61,23 +102,6 @@
 </div>
 @endsection
 @push('scripts')
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Popper.js (required for Bootstrap 4 dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Bootstrap 4 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    {{-- <script>
-        function check_perform_sedit() {
-            alert('Edit clicked');
-        }
-
-        function check_perform_sdelete(id) {
-            alert('Delete clicked with ID: ' + id);
-        }
-    </script> --}}
 @endpush
 

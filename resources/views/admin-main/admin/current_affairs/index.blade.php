@@ -65,8 +65,8 @@
                                         Action
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item text-success" href="javascript:void(0);" onclick="check_perform_sdelete('15')">
-                                            <i class="fa fa-arrows-alt"></i> view
+                                        <a class="dropdown-item btn-success" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#currentViewModal">
+                                            <i class="fa fa-arrows-alt"></i>View
                                         </a>
                                         <a class="dropdown-item" href="{{ url('admin/current_affairs/{id}/edit') }}" onclick="check_perform_sedit()">
                                             <i class="fa fa-edit"></i> Edit
@@ -80,9 +80,6 @@
                             </td>
                             
                         </tr>
-                        
-                       
-                       
                     </tbody>
                 </table>
             </div>
@@ -94,26 +91,56 @@
         <input type="text" class="form-control w-25" placeholder="Search">
         <button class="btn btn-success ms-2"><i class="fa fa-search"></i></button>
     </div>
+
+     <!-- Current Modal -->
+     <div class="modal fade" id="currentViewModal" tabindex="-1" aria-labelledby="viewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewLabel">Current Affair Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <table class="table table-bordered mb-0">
+                        <tbody>
+                            <tr>
+                                <th>Title</th>
+                                <td>Delhi Government launched Operation SHIELD in Hotspot areas</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Delhi Government on April 9, 2020 launched Operation Shield <br>in the 21 COVID-19 hotspot areas to scan and contain the spread of novel Coronavirus. </td>
+                            </tr>
+                            <tr>
+                                <th>Url</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Meta Title</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Meta Keyword</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Meta Content</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 @push('scripts')
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Popper.js (required for Bootstrap 4 dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Bootstrap 4 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    {{-- <script>
-        function check_perform_sedit() {
-            alert('Edit clicked');
-        }
-
-        function check_perform_sdelete(id) {
-            alert('Delete clicked with ID: ' + id);
-        }
-    </script> --}}
 @endpush
 

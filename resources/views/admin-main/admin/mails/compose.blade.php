@@ -34,7 +34,7 @@
                 </div><br>
                 <div class="form-group text-left">
                     <div class="col-sm-offset-3 col-sm-7">
-                        <button class="btn btn-success" type="submit"><span class="fa fa-plus-circle"></span>&nbsp;Send</button><a href="{{route('student.mail')}}" class="btn btn-danger"><span class="fa fa-close"></span>&nbsp;Close</a> </div>
+                        <button class="btn btn-success" type="submit"><span class="fa fa-plus-circle"></span>&nbsp;Send</button><a href="{{url('admin/mails')}}" class="btn btn-danger"><span class="fa fa-close"></span>&nbsp;Close</a> </div>
                 </div>
             </form>
         </div>

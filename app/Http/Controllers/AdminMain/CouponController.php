@@ -62,4 +62,9 @@ class CouponController extends Controller
     {
         //
     }
+
+    public function UseCoupon() {
+        return view('admin-main.admin.Coupons.UseCoupon');
+
+    }
 }

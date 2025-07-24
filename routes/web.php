@@ -69,7 +69,7 @@ Route::controller(W3crmAdminController::class)->group(function () {
         Route::get('page-error-500 ','page_error_500');
         Route::get('page-error-503 ','page_error_503');
         
-        Route::get('/logout', 'logout')->name('logout');
+        // Route::get('/logout', 'logout')->name('logout');
     });
 
     Route::get('page-forgot-password ','page_forgot_password');
@@ -92,7 +92,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/users/assign-create',[UserController::class,'assign_create']);
     Route::get('/users/assign-premission',[UserController::class,'assign_premission'])->name('users.assign_premission');
     Route::get('/users/assign_edit/{id}', [UserController::class, 'assign_edit'])->name('users.assign_edit');
-
+     
+    Route::get('language',[QuestionController::class,'language'])->name('questions.language');
+    Route::get('Attemptpaper',[ExamController::class, 'Attemptpaper'])->name('exams.Attemptpaper');
+    Route::get('Iestudents',[StudentController::class,'Iestudents'])->name('students.Iestudents');
+    Route::get('UseCoupon',[CouponController::class,'UseCoupon'])->name('Coupons.UseCoupon');
     // Admin Route
     Route::group(['prefix' => 'admin'], function () {
 

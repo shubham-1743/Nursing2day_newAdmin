@@ -39,7 +39,7 @@
             <input type="text" class="form-control" placeholder="Cart Amount">
         </div>
         <div class="col-md-2">
-            <input type="text" class="form-control" placeholder="TRN Amount">
+            <input type="number" class="form-control" placeholder="TRN Amount">
         </div>
         <div class="col-md-2">
             <input type="date" class="form-control" placeholder="Date From">
@@ -50,7 +50,7 @@
         <div class="col-md-4 text-end">
             <button class="btn btn-success">Search</button>
             <button class="btn btn-warning">Reset</button>
-            <button class="btn btn-info">Export In Excel</button>
+            <button class="btn btn-info"><span class="fa fa-file-excel-o"></span>Export In Excel</button>
         </div>
     </div>
 

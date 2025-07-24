@@ -21,8 +21,7 @@
                             <select name="user_level" id="user_level" class="form-control">
                                 <option value="">-- Select User Level --</option>
                                 <option value="Administrator" {{ old('user_level') == 'Administrator' ? 'selected' : '' }}>Administrator</option>
-                                <option value="Editor" {{ old('user_level') == 'Editor' ? 'selected' : '' }}>Editor</option>
-                                <option value="Viewer" {{ old('user_level') == 'Viewer' ? 'selected' : '' }}>Viewer</option>
+                               
                             </select>
                         </div>
 
@@ -64,7 +63,7 @@
                         <!-- Mobile -->
                         <div class="mb-3">
                             <label for="mobile" class="form-label">Mobile</label>
-                            <input type="text" name="mobile" id="mobile" class="form-control" value="{{ old('mobile') }}">
+                            <input type="number" name="mobile" id="mobile" class="form-control" value="{{ old('mobile') }}">
                         </div>
 
                         <!-- Buttons -->

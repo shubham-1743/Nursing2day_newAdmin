@@ -37,7 +37,7 @@ class PackageController extends Controller
      */
     public function show(string $id)
     {
-        return view('admin-main.admin.packages.show');
+       
     }
 
     /**

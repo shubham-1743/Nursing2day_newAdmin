@@ -57,6 +57,10 @@ class QuestionController extends Controller
         //
     }
 
+    public function language() {
+        return view('admin-main.admin.questions.language');
+    }
+
     /**
      * Remove the specified resource from storage.
      */

@@ -62,4 +62,8 @@ class ExamController extends Controller
     {
         //
     }
+
+    public function Attemptpaper() {
+        return view('admin-main.admin.exam.Attemptpaper');
+    }
 }
